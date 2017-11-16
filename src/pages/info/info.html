@@ -1,0 +1,18 @@
+<ion-header>
+	<ion-navbar>
+		<ion-title>Info Page</ion-title>
+	</ion-navbar>
+</ion-header>
+
+
+<ion-content class="home" padding>
+	<ion-list>
+		<ion-item *ngFor="let produto of categoria.produtos">
+			<ion-avatar item-left>
+				<img src="{{produto.imagemURL}}" />
+			</ion-avatar>
+			<h2>{{produto.nome}}</h2>
+			<p class="item-description">{{produto.preco}}</p>
+		</ion-item>
+	</ion-list>
+</ion-content>
