@@ -5,9 +5,7 @@ import 'rxjs/add/operator/map';
 @Injectable()
 export class WebService {
 
-    constructor(private http: Http) {
-
-    }
+    constructor(private http: Http) { }
 
     consultaServidor() {
         var url = 'https://gs-sts-cloud-foundry-deployment-angoti.cfapps.io/categorias/';
